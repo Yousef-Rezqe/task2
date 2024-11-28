@@ -9,14 +9,11 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-          
-    steps: 
-      - name: 'Before'
-        run: ls
-          
-      - name: 'Testing printing '
-        run: echo youssef 
+            
+    steps:  
       - uses: actions/checkout@v3
+      
+      - name: "login to docker hub"
+        run: docker login -u aborizk --password dckr_pat_ydyt1BJjgXWMDJoU-W__qBSRLSo
 
-      - name: 'after'
-        run: ls
+       
