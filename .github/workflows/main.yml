@@ -6,16 +6,16 @@ on:
   
   
   
-  jobs:
-    build:
-      runs-on: ubuntu-latest
+jobs:
+  build:
+    runs-on: ubuntu-latest
           
-      steps: 
-        - name: 'Testing Githup action'
-          run: pwd 
+    steps: 
+      - name: 'Testing Githup action'
+        run: pwd 
           
-        - name: 'Testing printing '
-          run: echo youssef 
+      - name: 'Testing printing '
+        run: echo youssef 
   
 
   
